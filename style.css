@@ -1,0 +1,819 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3cfe2; /* Light background color */
+  }
+  
+  /* Header Container */
+  .header-container {
+    background-color: #58041c; /* Dark background for the header */
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Spacer (Top and Bottom Spacing) */
+  .header-spacer {
+    height: 20px; /* Adjust space as needed */
+  }
+  
+  /* Contents of the Header */
+  .header-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  /* Columns inside Header */
+  .header-column {
+    flex: 1; /* Each column will take equal space */
+    text-align: center;
+  }
+  
+  /* Navigation */
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation ul li a:hover {
+    color: #fb7f69; /* Change color on hover */
+  }
+  
+  /* Site Title */
+  .site-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Quote */
+  .quote {
+    font-style: italic;
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+  }
+  .help-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f3cfe2;
+  color: #58041c; /* dark text/icon for contrast */
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.help-button:hover {
+  background-color: #f0b7d4;
+  transform: scale(1.1);
+}
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent; /* optional: transparent to show border */
+    color: white;
+    border: 1px solid white; /* this adds a thin white border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: white;
+    color: #333; /* dark text on hover for contrast */
+  }
+
+
+
+  .main-content {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .cta-section {
+    text-align: center;
+  }
+  
+  .cover-image {
+    position: relative;
+    background-image: url('assets/mainCookies.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* .cover-text h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow:
+      1px 1px 2px rgba(0, 0, 0, 0.6),
+      2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    text-align: center;
+    margin: 0;
+  } */
+  
+  .wordart-text {
+    font-size: 40px;
+    font-weight: 800;
+    color: #582929; /* Deep cocoa brown (like baked cookies 😋) */
+    text-align: center;
+    text-transform: uppercase;
+  
+    text-shadow:
+      1px 1px 0 #d4bcbc,
+      2px 2px 0 #bca7a7,
+      3px 3px 0 #a68f8f,
+      4px 4px 0 #8f7a7a,
+      5px 5px 0 #7a6565;
+  }
+  
+  
+  
+  
+  .cover-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .cookie-qualities-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    color: #4e342e; /* chocolatey brown */
+  }
+  
+  
+  /* Services Section */
+.services {
+    padding: 30px 0;
+    background-color: #f3cfe2; /* Consistent light background */
+  }
+  
+  .header-spacer {
+    height: 20px; /* Optional spacer */
+  }
+  
+  .services-group {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .services-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #58041c; /* Dark red like header background */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    min-width: 280px; /* Ensures proper display on smaller screens */
+  }
+  
+  .column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+  }
+  
+  .column img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Removed the .cookie-box for the H3 title */
+  .cookie-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #58041c; /* Dark red to match header */
+    margin-top: 15px; /* Add space between the image and text */
+  }
+  
+  .cta-button-service {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #58041c; /* Dark red for consistency */
+    border: 1px solid #58041c; /* Border same as text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover-service {
+    background-color: #58041c; /* Dark red on hover */
+    color: white; /* Text turns white on hover */
+  }
+  
+
+
+/* Testimonial Section */
+.testimonials {
+    padding: 40px 0;
+    background-color: #58041c; /* Dark background color */
+    color: white; /* White text for the testimonials */
+    border-radius: 15px; /* Round the corners of the background */
+    margin-top: 2px; /* Optional: Adds space above the section */
+  }
+  
+  .testimonials-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 5px; /* Reduced space above the heading */
+  }
+  
+  .header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between buttons */
+}
+
+  .header-spacer {
+    height: 20px; /* Optional spacer */
+  }
+  
+  .testimonial-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+  }
+  
+  .testimonial-column {
+    flex: 1;
+    text-align: center;
+    min-width: 280px; /* Ensures proper display on smaller screens */
+  }
+  
+  .testimonial-quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-author {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f1f1f1; /* Light color for the author's name */
+  }
+  
+  .testimonial-column blockquote {
+     /* Optional: Add a left border for quote styling */
+    padding-left: 20px;
+    padding-right: 25px;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #f1f1f1; /* Light gray for quotes */
+  }
+  
+
+
+
+  /* Footer Styles */
+.footer-container {
+    background-color: #f3cfe2; /* Dark background color */
+    color: white; /* White text */
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer-spacer {
+    height: 10px; /* Adjust space above footer content */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    max-width: 150px; /* Adjust the logo size */
+  }
+  
+  .footer-info {
+    text-align: right;
+  }
+  
+  .footer-trademark
+  {
+    color:#58041c;
+  }
+  
+  .web-address p,
+  .phone-number p {
+    color: #58041c; /* Light color for text */
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icon img {
+    width: 30px; /* Icon size */
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    opacity: 0.7; /* Slightly transparent when hovered */
+  }
+  
+  .footer-info a {
+    color: #58041c; /* Dark text color for links */
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    color: #fb7f69; /* Highlight color on hover */
+  }
+  
+
+
+ /* ABOUT PAGE */
+
+body.about-page {
+  background-color: #fae6f1; /* different bg for About page */
+}
+.story-text h1,
+.mission-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center; /*  Center the heading */
+  width: 100%;
+}
+
+.story-text p,
+.mission-text p {
+  text-align: justify; /* Neatly aligns text on both sides */
+  line-height: 1.6;    /* Optional: improves readability */
+  font-size: 18px;     /* Optional: make it a bit more readable */
+  margin: 0 auto;
+}
+
+
+ .story-section {
+  /* background-color:f3cfe2; */
+  /* background: linear-gradient(to bottom, #fff8f0, #ffffff); */
+   background-color: #fae6f1;
+  padding: 60px 20px;
+}
+
+.story-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+  gap: 40px;
+}
+
+.story-image img {
+  max-width: 300px;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  display: block;
+}
+
+.story-text {
+  flex: 1;
+  color: #58041c;
+  max-width: 400px;
+}
+
+.story-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+
+.mission-section {
+  background-color: #fae6f1;
+  padding: 60px 20px;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+  gap: 40px;
+}
+
+.mission-image img {
+  max-width: 300px;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  display: block;
+}
+
+.mission-text {
+  flex: 1;
+  color: #58041c;
+  max-width: 400px;
+}
+
+.mission-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.footer-about-container {
+    background-color: #f3cfe2; /* Dark background color */
+    color: white; /* White text */
+    padding: 30px 0;
+    text-align: center;
+  }
+
+
+
+
+
+  /* PRODUCTS PAGE */
+
+
+  /* Search */
+.product-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 250px;
+}
+
+/* Product Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Only 2 per row */
+  gap: 30px;
+  padding: 40px 80px;
+}
+
+
+/* Product Card */
+.product-card {
+  background: #58041c; /* transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle border */
+  border-radius: 20px;
+  backdrop-filter: blur(5px); /* slight glassmorphism */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-img {
+  position: relative;
+}
+
+
+.product-img img {
+  width: 100%;
+  height: 360px; /* increased from 180px */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: gold;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Content */
+
+
+.price {
+  font-size: 1.2rem;
+  color: #fff; /* Or dark, depending on background */
+  margin: 5px 0;
+}
+
+.price .unit {
+  font-size: 0.9rem;
+  color: #ccc; /* Lighter text for the unit */
+  margin-left: 5px;
+}
+
+.quantity-control {
+  margin: 8px 0;
+  gap: 6px;
+}
+.quantity-control button {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.product-actions {
+  margin-top: 6px;
+}
+.product-actions button {
+  font-size: 1.3rem;
+}
+
+.product-actions button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.product-actions button:hover {
+  transform: scale(1.2);
+}
+
+/* Hover details */
+.hover-details {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 10px;
+  display: none;
+}
+
+.product-card {
+  padding-bottom: 12px;
+}
+
+.product-card:hover .hover-details {
+  display: block;
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+/* CART PAGE */
+
+
+
+
+/*ORDER PAGE*/
+
+
+.order-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  
+}
+
+.order-form,
+.order-summary {
+  flex: 1 1 45%;
+}
+
+h2 {
+  padding-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #58041c;
+  background-color: white;
+  color:#58041c;
+  font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+
+.order-summary {
+  background-color: rgba(255,255,255,0.03);
+  padding: 0px;
+  border-radius: 12px;
+}
+
+.order-summary .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+}
+
+.submit-btn {
+  background:#58041c;
+  color:white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .order-section {
+    flex-direction: column;
+  }
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 6px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.summary-left {
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-right {
+  font-weight: 600;
+  color: #58041c;
+}
+
+
+/*HELP*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3cfe2; /* Light background color */
+  }
+  
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.faq-question:hover {
+  color: #d34c91;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-top: 0.8rem;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}

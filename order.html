@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Cookies - Crust Cookies</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header-container products-header">
+    <div class="header-contents">
+      <div class="header-column">
+        <img src="assets/crustCookies.png" alt="Site Logo" style="height: 100px;" />
+      </div>
+      <div class="header-column">
+        <h1 class="site-title">Crust Cookies</h1>
+        <blockquote class="quote"><i>"Where Every Bite Starts with the Perfect Crust!"</i></blockquote>
+      </div>
+      <div class="header-column">
+        <div class="buttons">
+          <a href="index.html"><button class="cta-button">Home</button></a>
+          <a href="products.html"><button class="cta-button">Products</button></a>
+          <a href="help.html" class="help-button" title="Need Help?">❓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <section class="order-section">
+    <div class="order-form">
+      <h2>Shipping Details</h2>
+      <form id="orderForm" method="POST" action="http://localhost:3000/api/orders">
+  
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="date">Preferred Delivery Date</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="instructions">Special Instructions</label>
+        <textarea id="instructions" name="instructions" rows="2"></textarea>
+
+        <input type="hidden" name="total_price" id="totalPriceInput" />
+
+        <button type="submit" class="submit-btn">Confirm Order</button>
+      </form>
+    </div>
+    
+    <div class="order-summary"> 
+      <h2>Order Summary</h2>
+      <div class="order-summary-items"></div>
+      <hr>
+      <p>Total: <span class="order-total">Rs 0</span></p>
+    </div>
+    </section>
+    
+
+  <footer class="footer-container">
+    <div class="footer-spacer"></div>
+    
+    <div class="footer-content">
+      <!-- Left: Site Logo -->
+      <div class="footer-logo">
+        <img src="assets/crustCookies.png" alt="Site Logo" class="logo">
+      </div>
+      
+      <!-- Right: Web address, Phone number, Social Media Icons -->
+      <div class="footer-info">
+        <div class="web-address">
+          <p>www.crustcookies.com</p>
+        </div>
+        <div class="phone-number">
+          <p>+123 456 7890</p>
+        </div>
+        <div class="footer-trademark">
+        <div>&copy; 2025 Crust Cookies Bakery | Made with ❤️ and butter.</div></div>
+        <div class="social-icons">
+          <a href="https://instagram.com" class="social-icon" target="_blank"><img src="assets/9024634_instagram_logo_light_icon.png" alt="Instagram"></a>
+          <a href="https://snapchat.com" class="social-icon" target="_blank"><img src="assets/5296509_snapchat logo_ghost_snap_snapchat_social media_icon.png" alt="Snapchat"></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><img src="assets/211901_facebook_social_icon.png" alt="Facebook"></a>
+          <a href="https://tiktok.com" class="social-icon" target="_blank"><img src="assets/9027137_tiktok_logo_thin_icon.png" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="order.js"></script>
+  
+
+</body>
+</html>
+

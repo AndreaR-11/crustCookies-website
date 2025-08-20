@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Cookies - Crust Cookies</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+
+</head>
+<body>
+
+    
+  <!-- Header -->
+  <div class="header-container products-header">
+    <div class="header-contents">
+      <div class="header-column">
+        <img src="assets/crustCookies.png" alt="Site Logo" style="height: 100px;" />
+      </div>
+      <div class="header-column">
+        <h1 class="site-title">Crust Cookies</h1>
+        <blockquote class="quote"><i>"Where Every Bite Starts with the Perfect Crust!"</i></blockquote>
+      </div>
+      <div class="header-column">
+        <div class="buttons">
+          <a href="index.html"><button class="cta-button">Home</button></a>
+          <a href="products.html"><button class="cta-button">Products</button></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-spacer"></div> 
+
+  <div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How do I place an order?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        Just go to our <strong>Products</strong> page, add your favorite cookies to the cart, and complete your shipping details on the <strong>Order</strong> page. Boom—done! 🍪
+      </div>
+    </div>
+
+   
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is your delivery time?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        We deliver within <strong>2-3 business days</strong> after you place your order. You’ll get an email when your cookies are on the way!
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer same-day delivery?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        At the moment, same-day delivery is available for select locations. Contact us to see if your area is eligible.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What if I need to cancel or change my order?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        No problem! You can modify or cancel your order by contacting us within 12 hours of placing it.
+      </div>
+    </div>
+  </div>
+
+   <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+
+   </section>
+         <!-- Footer Section -->
+<footer class="footer-container">
+    <div class="footer-spacer"></div>
+    
+    <div class="footer-content">
+      <!-- Left: Site Logo -->
+      <div class="footer-logo">
+        <img src="assets/crustCookies.png" alt="Site Logo" class="logo">
+      </div>
+      
+
+      <!-- Right: Web address, Phone number, Social Media Icons -->
+      <div class="footer-info">
+        <div class="web-address">
+          <p>www.crustcookies.com</p>
+        </div>
+        <div class="phone-number">
+          <p>+123 456 7890</p>
+        </div>
+        <div class="footer-trademark">
+        <div>&copy; 2025 Crust Cookies Bakery | Made with ❤️ and butter.</div></div>
+        <div class="social-icons">
+          <a href="https://instagram.com" class="social-icon" target="_blank"><img src="assets/9024634_instagram_logo_light_icon.png" alt="Instagram"></a>
+          <a href="https://snapchat.com" class="social-icon" target="_blank"><img src="assets/5296509_snapchat logo_ghost_snap_snapchat_social media_icon.png" alt="Snapchat"></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><img src="assets/211901_facebook_social_icon.png" alt="Facebook"></a>
+          <a href="https://tiktok.com" class="social-icon" target="_blank"><img src="assets/9027137_tiktok_logo_thin_icon.png" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+
+  </body>
+</html>
+
