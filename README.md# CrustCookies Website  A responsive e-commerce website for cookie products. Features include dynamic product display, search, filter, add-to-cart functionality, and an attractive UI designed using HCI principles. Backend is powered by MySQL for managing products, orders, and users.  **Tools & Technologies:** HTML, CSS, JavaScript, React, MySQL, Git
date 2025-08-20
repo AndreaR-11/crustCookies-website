@@ -1,0 +1,5 @@
+# CrustCookies Website
+
+A responsive e-commerce website for cookie products. Features include dynamic product display, search, filter, add-to-cart functionality, and an attractive UI designed using HCI principles. Backend is powered by MySQL for managing products, orders, and users.
+
+Tools & Technologies: HTML, CSS, JavaScript, React, MySQL, Git
